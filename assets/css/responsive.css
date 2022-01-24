@@ -1,0 +1,209 @@
+@media only screen and (max-width: 600px) {
+    .navbar-custom {
+        padding: 0 24px;
+    }
+
+    .navbar-branding p {
+        font-size: 24px;
+    }
+
+    .navbar-items {
+        display: none;
+    }
+
+    .navbar-icons {
+        width: calc(100vw - 33.3%);
+    }
+
+    .navbar-icons .icon:nth-of-type(2) {
+        display: flex !important;
+    }
+
+    .main {
+        transition: all 1s ease-in;
+        opacity: 1;
+    }
+
+    .main.active {
+        transform-origin: bottom left;
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    .main-content {
+        display: block;
+        padding: 16px 24px 16px 24px !important;
+    }
+
+    .side {
+        min-width: 0;
+    }
+
+    .title {
+        height: 100%;
+    }
+
+    .title h4 {
+        transform: translate(5px, -35px);
+        text-align: left;
+    }
+
+    .image-div {
+        min-height: 75vh;
+    }
+
+    .navbar-icons .icon:hover .icon-tooltip {
+        display: none;
+    }
+
+    .navbar-icons .icon .material-icons:hover {
+        transform: translateX(0);
+    }
+
+    .custom-mobile-nav {
+        display: block;
+        position: absolute;
+        background-color: #FBFBFB;
+        /*background-image: linear-gradient(135deg, #11998e, #38ef7d);*/
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        opacity: 0;
+        transition: all 1s ease-in;
+        padding: 40px 24px;
+        transform: translateX(100%);
+        transform-origin: top right;
+    }
+
+    .custom-mobile-nav.active {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .custom-mobile-nav .branding {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .custom-mobile-nav .branding p {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        /*margin-left: 16px;*/
+        color: #212529;
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .custom-mobile-nav .navbar-items {
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .custom-mobile-nav .navbar-items ul {
+        display: block;
+    }
+
+    .custom-mobile-nav .navbar-items ul li {
+        display: flex;
+        justify-content: center;
+        padding: 8px 0 8px 0;
+    }
+
+    .custom-mobile-nav .navbar-items ul li a {
+        color: #212529;
+        transition: none;
+        transform-origin: unset;
+    }
+
+    .custom-mobile-nav .navbar-items ul li a:hover {
+        background: none;
+        letter-spacing: 8px;
+    }
+
+    .custom-mobile-nav .separator {
+        min-width: 100%;
+        height: 1px;
+        background-color: #212529;
+        margin: 40px 0;
+        opacity: 0.5;
+    }
+
+    .custom-mobile-nav .close-item {
+        display: flex;
+        justify-content: center;
+    }
+
+    .custom-mobile-nav .close-item p {
+        margin-bottom: 0;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        cursor: pointer;
+    }
+
+    #newsletter-main-content {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .newsletter {
+        min-width: 100%;
+    }
+
+    .newsletter .form-bg .submit-form-btn {
+        transform: translateY(0) translateX(0);
+        margin-bottom: 32px;
+        min-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .newsletter-info {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 !important;
+    }
+
+    .newsletter-info .info {
+        border-right: none;
+        padding: 0;
+        margin-top: 24px;
+    }
+
+    .newsletter-info .info h4 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .newsletter-info .info p {
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .branding {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer .footer-section {
+        width: 100%;
+        margin-top: 24px;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+    }
+
+    .circles {
+        display: none;
+    }
+}
